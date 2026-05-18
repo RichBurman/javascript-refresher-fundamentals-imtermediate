@@ -7,3 +7,19 @@ if (sale) {
 } else {
     console.log('Time to wait for a sale.')
 }
+
+// less than: <
+// greater than: >
+// less than or equal to: <=
+// greater than or equal to: >=
+// is equal to: ===
+// is not equal to: !==
+
+let hungerLevel = 7;
+
+if (hungerLevel > 7) {
+  console.log('Time to eat!')
+} else {
+  console.log('We can eat later!')
+}
+
