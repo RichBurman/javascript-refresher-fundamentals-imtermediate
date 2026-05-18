@@ -1,0 +1,14 @@
+// This variable is the forecast today in Kelvin. I am using const as the value will stay constant. 
+const kelvin = 0;
+
+// This is celsuis. This is using let as the value will change. It is kelvin - 273. 
+let celsius = kelvin - 273;
+
+// This is fahrenheit. This is using let as the value will change. It is celsius * (9/5) + 32; This is rounded to the nearest whole number. 
+let fahrenheit = (Math.floor(celsius * (9/5) + 32));
+
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+
+let newton = (Math.floor(celsius * (33/100)));
+
+console.log(`The temperature is ${newton} degrees newton.`);
