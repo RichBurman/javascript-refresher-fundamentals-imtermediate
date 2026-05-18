@@ -23,3 +23,24 @@ if (hungerLevel > 7) {
   console.log('We can eat later!')
 }
 
+// the and operator (&&)
+// the or operator (||)
+// the not operator, otherwise known as the bang operator (!)
+
+
+let mood = 'sleepy';
+let tirednessLevel = 6;
+
+
+if (mood === 'sleepy' && tirednessLevel > 8) {
+  console.log('time to sleep')
+} else {
+  console.log('not bedtime yet')
+}
+
+
+let excited = true;
+console.log(!excited); // Prints false
+
+let sleepy = false;
+console.log(!sleepy); // Prints true
