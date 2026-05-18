@@ -84,3 +84,6 @@ const plantNeedsWater = (day) => {
     return false;
   }
 };
+
+// Concise body arrow function
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
