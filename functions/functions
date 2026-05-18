@@ -48,3 +48,30 @@ function monitorCount(rows, columns) {
 const numOfMonitors = monitorCount(5, 4);
 
 console.log(numOfMonitors);
+
+
+// Call a function from another function
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+function costOfMonitors(rows, columns) {
+  return monitorCount(rows, columns) * 200
+}
+
+const totalCost = costOfMonitors(5, 4)
+
+console.log(totalCost);
+
+// Function expression
+const plantNeedsWater = function(day) {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+plantNeedsWater('Tuesday');
+
+console.log(plantNeedsWater('Tuesday'))
