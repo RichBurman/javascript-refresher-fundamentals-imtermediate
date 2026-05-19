@@ -56,3 +56,25 @@ const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'm
 chores.pop();
 
 console.log(chores);
+
+
+// Arrays with the shift() and unshift() methods
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+
+// The shift() method removes the first item of an array and returns that removed item. This method changes the length of the array.
+groceryList.shift();
+console.log(groceryList);
+
+// The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+groceryList.unshift('popcorn');
+console.log(groceryList);
+
+// Arrays with the slice() method. The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included). The original array will not be modified.
+console.log(groceryList.slice(1, 4));
+
+console.log(groceryList);
+
+// Arrays with the indexOf() method. The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+const pastaIndex = groceryList.indexOf('pasta');
+
+console.log(pastaIndex);
