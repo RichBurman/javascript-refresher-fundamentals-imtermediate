@@ -49,3 +49,10 @@ const chores = ['wash dishes', 'do laundry', 'take out trash'];
 chores.push('mop floor', 'vacuum floor');
 
 console.log(chores);
+
+// Array with the pop() method
+const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+
+chores.pop();
+
+console.log(chores);
