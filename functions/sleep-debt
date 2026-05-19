@@ -1,0 +1,63 @@
+const getSleepHours = (day) => {
+  day = day.toLowerCase();
+  if (day === "monday") {
+    return 8;
+  } else if (day === "tuesday") {
+    return 9;
+  } else if (day === "wednesday") {
+    return 7;
+  } else if (day === "thursday") {
+    return 6;
+  } else if (day === "friday") {
+    return 8;
+  } else if (day === "saturday") {
+    return 10;
+  } else if (day === "sunday") {
+    return 11;
+  }
+};
+
+// console.log(getSleepHours('Wednesday'));
+
+// const getActualSleepHours = () => {
+//   return (
+//     getSleepHours("monday") +
+//     getSleepHours("tuesday") +
+//     getSleepHours("wednesday") +
+//     getSleepHours("thursday") +
+//     getSleepHours("Friday") +
+//     getSleepHours("saturday") +
+//     getSleepHours("sunday")
+//   );
+// };
+
+const getActualSleepHours = () => {
+  return 8 + 9 + 7 + 6 + 8 + 10 + 11;
+}
+// const getIdealSleepHours = () => {
+//   const idealHours = 8;
+//   return idealHours * 7;
+// }
+
+const getIdealSleepHours = (idealHours) => {
+  return idealHours * 7;
+}
+// console.log(getActualSleepHours());
+// console.log(getIdealSleepHours())
+
+const calculateSleepDebt = () => {
+  const actualSleepHours = getActualSleepHours();
+  const idealSleepHours = getIdealSleepHours(9);
+
+  const sleepHoursDiff = idealSleepHours - actualSleepHours;
+
+  if (actualSleepHours === idealSleepHours) {
+    console.log('You got the perfect amount of sleep!');
+  } else if (actualSleepHours > idealSleepHours) {
+    console.log(`You got more sleep than needed! You had ${actualSleepHours - idealSleepHours} hours extra`);
+  } else if (actualSleepHours < idealSleepHours) {
+    console.log(`You should get some rest! You need ${idealSleepHours - actualSleepHours} hours extra`);
+  }
+}
+
+calculateSleepDebt()
