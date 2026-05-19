@@ -1,0 +1,14 @@
+let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
+
+console.log(newYearsResolutions);
+
+// An array is a data structure that contains a list of items. Each item in an array has a numbered position, known as its index. Arrays are zero-indexed, which means the first item has an index of 0, the second item has an index of 1, and so on.
+const hobbies = ['', '', ''];
+console.log(hobbies)
+
+const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+
+const listItem = famousSayings[0];
+console.log(listItem);
+console.log(famousSayings[2]);
+console.log(famousSayings[3]);
