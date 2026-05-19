@@ -23,3 +23,23 @@ groceryList[1] = 'avocados';
 
 console.log(groceryList)
 
+// Arrays with let and const
+let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+
+const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+
+condiments[0] = 'Mayo';
+console.log(condiments);
+
+condiments = ['Mayo'];
+console.log(condiments);
+
+utensils[3] = 'Spoon';
+console.log(utensils);
+
+
+// Arrays with the length property
+const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
+
+console.log(objectives.length);
+
