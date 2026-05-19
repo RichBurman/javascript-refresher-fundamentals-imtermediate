@@ -1,3 +1,4 @@
+// Scope
 const city = 'New York City';
 
 const logCitySkyline = () => {
@@ -7,6 +8,7 @@ const logCitySkyline = () => {
 
 console.log(logCitySkyline());
 
+// Global Scope
 
 const satellite = 'The Moon';
 const galaxy = 'The Milky Way';
@@ -17,3 +19,12 @@ const callMyNightSky = () => {
 }
 
 console.log(callMyNightSky());
+
+// Block Scope
+const logVisibleLightWaves = () => {
+  const lightWaves = 'Moonlight';
+  console.log(lightWaves);
+}
+
+console.log(logVisibleLightWaves());
+console.log(lightWaves);
