@@ -6,6 +6,8 @@ console.log(newYearsResolutions);
 const hobbies = ['', '', ''];
 console.log(hobbies)
 
+
+// To access an item in an array, you can use bracket notation and the index of the item you want to access. For example, if you want to access the first item in the array, you would use the index 0.
 const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
 
 const listItem = famousSayings[0];
