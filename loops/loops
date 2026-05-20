@@ -14,5 +14,15 @@ for (let counter = 3; counter > -1; counter--){
   console.log(counter);
 }
 
+const animals = ['Grizzly Bear', 'Sloth', 'Sea Lion'];
+for (let i = 0; i < animals.length; i++){
+  console.log(animals[i]);
+}
 
+// An example of a for loop that loops through the array and prints a string with the array element
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+for (let i = 0; i < vacationSpots.length; i++){
+  console.log(`I would love to visit ${vacationSpots[i]}`)
+}
 
