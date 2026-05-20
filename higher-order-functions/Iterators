@@ -1,30 +1,22 @@
-const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
-  for(let i = 1; i <= 1000000; i++) {
-    if ( (2 + 2) != 4) {
-      console.log('Something has gone very wrong :( ');
-    }
-  }
-};
+const artists = ['Picasso', 'Kahlo', 'Matisse', 'Utamaro'];
 
-// Write your code below
+artists.forEach(artist => {
+  console.log(artist + ' is one of my favorite artists.');
+});
 
-const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
+const numbers = [1, 2, 3, 4, 5];
 
-isTwoPlusTwo();
+const squareNumbers = numbers.map(number => {
+  return number * number;
+});
 
-console.log(isTwoPlusTwo.name)
+console.log(squareNumbers);
 
-// Functions as parameters
-const addTwo = num => {
-  return num + 2;
-}
+const things = ['desk', 'chair', 5, 'backpack', 3.14, 100];
 
-const checkConsistentOutput = (func, val) => {
-  const checkA = val + 2;
-  const checkB = func(val);
+const onlyNumbers = things.filter(thing => {
+  return typeof thing === 'number';
+});
 
-  return checkA === checkB ? func(val) : 'inconsistent results';  
-}
+console.log(onlyNumbers);
 
-
-console.log(checkConsistentOutput(addTwo, 1));
