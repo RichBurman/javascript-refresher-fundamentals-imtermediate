@@ -4,9 +4,15 @@ console.log(vacationSpots[0]);
 console.log(vacationSpots[1]);
 console.log(vacationSpots[2]);
 
+// An example of a for loop that counts from 0 to 3
+for (let counter = 0; counter < 4; counter++) {
+  console.log(counter);
+}
 
-
-
+// An example of a for loop that counts from 3 to 0 in reverse
+for (let counter = 3; counter > -1; counter--){
+  console.log(counter);
+}
 
 
 
