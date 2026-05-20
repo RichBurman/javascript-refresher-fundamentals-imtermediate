@@ -52,3 +52,30 @@ for (let i = 0; i < bobsFollowers.length; i++) {
 
 console.log(mutualFollowers)
 // Prints: ['Fred', 'Jane']
+
+// The While Loop. The while loop executes a block of code as long as a specified condition is true.
+
+// A for loop that prints 1, 2, and 3
+for (let counterOne = 1; counterOne < 4; counterOne++){
+  console.log(counterOne);
+}
+
+// A while loop that prints 1, 2, and 3
+let counterTwo = 1;
+while (counterTwo < 4) {
+  console.log(counterTwo);
+  counterTwo++;
+}
+
+// An example of a while loop that loops through an array and prints a string with the array element.
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+// Write your code below
+
+let currentCard; 
+// The while loop continues to execute as long as the currentCard does not equal spade. If currentCard equals spade, the condition becomes false and the loop stops executing.
+while (currentCard !== 'spade') {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard)
+}
+
