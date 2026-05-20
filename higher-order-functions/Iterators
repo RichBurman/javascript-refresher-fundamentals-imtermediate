@@ -48,3 +48,37 @@ const smallNumbers = bigNumbers.map(num => {
 });
 
 console.log(smallNumbers);
+
+// filter
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+
+const smallNumbers = randomNumbers.filter(num => {
+  return num < 250;
+})
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+
+// Call .filter() on favoriteWords below
+
+const longFavoriteWords = favoriteWords.filter(word => {
+  return word.length > 7;
+})
+
+// indexOf
+
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals.findIndex(animal => {
+  return animal === 'elephant';
+});
+
+const startsWithS = animals.findIndex(i => {
+  return i[0] === 's';
+})
+
+
+
