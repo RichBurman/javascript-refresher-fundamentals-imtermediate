@@ -1,0 +1,28 @@
+let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+
+// Remove the last String - which is JavaScript
+secretMessage.pop();
+
+// Show the length of the array. 
+console.log(secretMessage.length);
+
+// Add to and program to the end of the array.
+secretMessage.push('to', 'Program');
+
+// Change the word easily to right by accessing the index and reassigning it.
+secretMessage[7] = 'right';
+
+// Remove the first string of the array.
+secretMessage.shift();
+
+// Add to the beginning of the array.
+secretMessage.unshift('Programming');
+
+// Remove the strings get, right, the, first, time, and, to by using splice().
+secretMessage.splice(6, 6, 'know,');
+
+// Use join() to turn the array into a sentence.
+console.log(secretMessage.join(' '));
+
+// Prints: Programming is not about what you know, it is about what you can figure out. -2015, Chris Pine, Learn to Program
+console.log(secretMessage);
