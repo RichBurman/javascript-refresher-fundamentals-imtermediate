@@ -79,3 +79,24 @@ while (currentCard !== 'spade') {
   console.log(currentCard)
 }
 
+// Do...While Loop. The do...while loop is a variant of the while loop. The code block will be executed at least once, and then it will continue to execute as long as the specified condition is true.
+let countString = '';
+let i = 0;
+
+do {
+  countString = countString + i;
+  i++;
+} while (i < 5);
+
+console.log(countString);
+
+
+// An example of a do...while loop that loops through an array and prints a string with the array element.
+
+const cupsOfSugarNeeded = 1;
+let cupsAdded = 0;
+
+do {
+  cupsAdded++
+  console.log(cupsAdded)
+} while (cupsAdded < cupsOfSugarNeeded)
