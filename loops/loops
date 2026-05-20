@@ -26,3 +26,29 @@ for (let i = 0; i < vacationSpots.length; i++){
   console.log(`I would love to visit ${vacationSpots[i]}`)
 }
 
+// Nested loops. A loop inside of another loop.
+const arrayA = [6, 19, 20];
+const arrayB = [19, 81, 2];
+for (let i = 0; i < arrayA.length; i++) {
+  for (let j = 0; j < arrayB.length; j++) {
+    if (arrayA[i] === arrayB[j]) {
+      console.log('Both arrays have the number: ' + arrayB[j]);
+    }
+  }
+}
+
+// An example of nested loops that finds mutual followers between two arrays of followers.
+const bobsFollowers = ['Fred', 'Jane', 'Harry', 'Luke'];
+const tinasFollowers = ['Fred', 'Jane', 'Alex'];
+const mutualFollowers = [];
+
+for (let i = 0; i < bobsFollowers.length; i++) {
+  for (let j = 0; j < tinasFollowers.length; j++) {
+    if ( bobsFollowers[i] === tinasFollowers[j]) {
+      mutualFollowers.push(bobsFollowers[i]);
+    }
+  }
+}
+
+console.log(mutualFollowers)
+// Prints: ['Fred', 'Jane']
