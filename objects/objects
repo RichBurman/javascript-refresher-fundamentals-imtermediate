@@ -34,3 +34,37 @@ let propName =  'Active Mission';
 isActive = spaceship['Active Mission'];
 
 console.log(spaceship[propName]);
+
+// Property Assignment
+
+const spaceship = {type: 'shuttle'};
+spaceship = {type: 'alien'}; // TypeError: Assignment to constant variable.
+spaceship.type = 'alien'; // Changes the value of the type property
+spaceship.speed = 'Mach 5'; // Creates a new key of 'speed' with a value of 'Mach 5'
+
+// Deleting Properties
+
+const spaceship = {
+  'Fuel Type': 'Turbo Fuel',
+  homePlanet: 'Earth',
+  mission: 'Explore the universe' 
+};
+ 
+delete spaceship.mission;  // Removes the mission property
+
+// Another example 
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+
+// Write your code below
+
+spaceship.color = 'glorious gold';
+
+spaceship.numEngines = 6;
+
+delete spaceship['Secret Mission'];
