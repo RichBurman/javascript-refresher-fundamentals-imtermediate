@@ -1,0 +1,6 @@
+function setInstrument(instr) {    
+  let instrument = instr; 
+  return instrument;
+} 
+let instrument = setInstrument("cello");
+console.log(instrument);
